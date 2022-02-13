@@ -1,0 +1,83 @@
+/* CATALOGO */
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    grid-area: catalogo;
+    background-color: #faf6f6;
+}
+
+.catalogo h2 {
+    text-align: center;
+    margin: 5rem 0 0 0;
+}
+
+.catalogo__container {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+}
+
+.catalogo__card {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    max-width: 300px;
+    height: auto;
+    margin: 3rem 6rem;
+    box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.catalogo__card:hover {
+    box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+.catalogo__card img {
+    width: 300px;
+    height: auto;
+
+}
+
+.card__contenido {
+    padding: 1rem;
+}
+
+.card__contenido h4 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.card__contenido p {
+    color: #6a6a6a;
+    line-height: 1.5;
+}
+
+.catalogo__btn {
+    display: inline-block;
+    width: 10rem;
+    height: 3.5rem;
+    padding: 1rem 3rem;
+    background-color: #0f0e0e;
+    border-radius: 5px;
+    align-self: center;
+    margin: 0 0 4rem 0;
+    transition: all 400ms ease;
+}
+
+.catalogo__btn:hover {
+    transform: translateX(+1%);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.catalogo__btn a {
+    color: #faf6f6;
+    text-decoration: none;
+}

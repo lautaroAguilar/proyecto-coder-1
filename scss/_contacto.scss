@@ -1,0 +1,44 @@
+/* CONTACTO */
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+
+
+}
+
+.form label {
+    color: $secondary;
+}
+
+.form__input {
+    display: block;
+    width: 20rem;
+    height: 2.5rem;
+    color: $secondary;
+    border-radius: 5px;
+    background-color: #c4c4c400;
+    border: solid 1px $secondary;
+
+}
+
+.form__btn {
+    width: 49.2%;
+    height: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: $secondary;
+    color: #0f0e0e;
+    border: solid 1px $secondary;
+
+}
+
+.form__btn2 {
+    width: 49.2%;
+    height: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: $secondary;
+    color: $primary;
+    border: solid 1px $secondary;
+}

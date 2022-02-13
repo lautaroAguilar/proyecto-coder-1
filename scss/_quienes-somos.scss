@@ -1,0 +1,58 @@
+/* QUIENES SOMOS */
+/* HEADER */
+.header {
+    background-color: $primary;
+
+    .navbar-light .navbar-toggler {
+        color: white;
+        border-color: white;
+        background-color: $secondary;
+        padding: .3rem .8rem;
+        border-radius: .2rem;
+    }
+
+    .hamburguer {
+        color: $secondary;
+    }
+}
+
+/* QUIENES SOMOS */
+
+.wwa {
+    height: auto;
+    padding-bottom: 2rem;
+    background-color: $secondary;
+
+    .wwa__quienes-somos {
+        text-align: center;
+        padding: 1rem;
+
+        .wwa__quienes-somos--titulo {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+    }
+
+    .wwa__ubicacion {
+        padding: 0 1rem;
+        height: auto;
+
+        .wwa__ubicacion--titulo {
+            text-align: center;
+            padding-bottom: 2rem;
+        }
+
+        .wwa__ubicacion--mapa {
+            height: 20rem;
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                box-shadow: .2rem .2rem .5rem .5rem rgba($color: #3b3a3a, $alpha: 0.1);
+            }
+        }
+    }
+}
