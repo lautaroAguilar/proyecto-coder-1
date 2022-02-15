@@ -37,6 +37,8 @@
     .wwa__ubicacion {
         padding: 0 1rem;
         height: auto;
+        display: flex;
+        flex-direction: column;
 
         .wwa__ubicacion--titulo {
             text-align: center;
@@ -44,13 +46,15 @@
         }
 
         .wwa__ubicacion--mapa {
-            height: 20rem;
+            height: 29rem;
+            width: 80%;
+            margin: auto;
+            
+
 
             iframe {
                 width: 100%;
                 height: 100%;
-                background-repeat: no-repeat;
-                background-position: center;
                 box-shadow: .2rem .2rem .5rem .5rem rgba($color: #3b3a3a, $alpha: 0.1);
             }
         }
