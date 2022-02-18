@@ -1,0 +1,48 @@
+/* PAGINA 404 */
+body {
+    background-color: $terciary;
+}
+
+.contenedor__404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventana-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    padding: 3rem;
+    margin: 10rem 0;
+    background-color: $secondary;
+    border-radius: 1rem;
+    p{
+        text-align: center;
+    }
+    .boton__home {
+        a {
+            text-decoration: none;
+            color: $secondary;
+        }
+
+        display: flex;
+        width: 7rem;
+        height: 3rem;
+        background-color: $primary;
+        border-radius: .5rem;
+        justify-content: center;
+        align-items: center;
+        transition: all 400ms ease;
+    }
+    .boton__home:hover{
+        background-color: #1d1d1c;
+        cursor: pointer;
+        transform: translateY(-.1rem);
+        ;
+    }
+}
+
