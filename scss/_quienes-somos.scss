@@ -54,10 +54,87 @@
             iframe {
                 width: 100%;
                 height: 100%;
-                box-shadow: .2rem .2rem .5rem .5rem rgba($color: #3b3a3a, $alpha: 0.1);
+                box-shadow: .2rem .2rem 1rem .5rem rgba($color: #3b3a3a, $alpha: 0.1);
             }
         }
     }
 }
 
-/* RESOLUCION DEKSTOP */
+
+/* RESOLUCION DESKTOP */
+@media screen and (min-width: 1200px) {
+    /* NAV */
+    .navbar {
+        margin-top: -.1rem;
+        margin-left: 8.7rem;
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+    /* WWA */
+    .wwa{
+        display: flex;
+        flex-direction: column;
+        .wwa__quienes-somos{
+            width: 60%;
+            margin: auto;
+        }
+        .wwa__ubicacion{
+            width: 60%;
+            margin: auto;
+            .wwa__ubicacion--mapa{
+                width: 32rem;
+                height: 29.1rem;
+                background-color: #3b3a3a2a;
+            }
+        }
+    }
+    /* FOOTER */
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "redes contacto"
+            "textos textos";
+
+
+        .footer__redes {
+            display: flex;
+            justify-content: center;
+            grid-area: redes;
+            padding: 1rem;
+
+            h5 {
+                display: block;
+                padding: 0 5rem;
+                font-size: 1rem;
+                margin-top: .5rem;
+                padding: 0 3rem;
+            }
+        }
+
+        .footer__contacto {
+            grid-area: contacto;
+            padding: 0 2rem;
+            margin-top: .5rem;
+
+            .footer__contacto--input {
+                margin: 0 1rem;
+            }
+        }
+
+        .footer__textos {
+            grid-area: textos;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                display: block;
+                padding-left: 20rem;
+            }
+
+        }
+    }
+}

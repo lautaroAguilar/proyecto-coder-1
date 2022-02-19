@@ -1,22 +1,28 @@
-.experiencias{
+.experiencias {
     background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.titulosRes { 
+
+.titulosRes {
     width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 4rem 2rem 1rem 2rem;
     font-size: 1.5rem;
+
     .titulosRes__text {
         text-align: center;
         color: $primary;
     }
 }
-.reseñas{
+
+.reseñas {
     width: 100%;
     display: flex;
     gap: 3rem;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     justify-content: center;
     margin: 3rem 0;
 
@@ -30,42 +36,48 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            img{
+
+            img {
                 width: 8rem;
                 height: auto;
                 border-radius: 50%;
                 margin: 1rem;
-                
+
             }
-            h3{
+
+            h3 {
                 font-size: 1.3rem;
                 align-self: center;
                 color: $secondary;
                 margin: 1rem;
             }
-            p{
+
+            p {
                 margin: 1rem;
                 color: $secondary;
-                
+
             }
         }
-        .card__experiencia{
+
+        .card__experiencia {
             display: flex;
             justify-content: center;
-            p{
+
+            p {
                 text-align: center;
                 width: 15rem;
                 color: $terciary;
                 margin: 1rem;
-                
+
             }
         }
-        
-        
+
+
     }
 
 }
-.boton__reseñas{
+
+.boton__reseñas {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,11 +85,73 @@
     height: 3rem;
     background-color: $primary;
     border-radius: .5rem;
-    margin: 1rem 0 4rem 0; 
-    
-    a{
+    margin: 1rem 0 4rem 0;
+
+    a {
         text-decoration: none;
         color: $secondary;
-    } 
+    }
 
+}
+
+/* Dekstop */
+@media screen and (min-width: 1200px) {
+    .navbar {
+        margin-top: 2rem;
+        margin-left: 8.7rem;
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+
+
+
+    /* FOOTER */
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "redes contacto"
+            "textos textos";
+
+
+        .footer__redes {
+            display: flex;
+            justify-content: center;
+            grid-area: redes;
+            padding: 1rem;
+
+            h5 {
+                display: block;
+                padding: 0 5rem;
+                font-size: 1rem;
+                margin-top: .5rem;
+                padding: 0 3rem;
+            }
+        }
+
+        .footer__contacto {
+            grid-area: contacto;
+            padding: 0 2rem;
+            margin-top: .5rem;
+
+            .footer__contacto--input {
+                margin: 0 1rem;
+            }
+        }
+
+        .footer__textos {
+            grid-area: textos;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                display: block;
+                padding-left: 20rem;
+            }
+
+        }
+    }
 }

@@ -74,10 +74,14 @@
     transform: translateX(+1%);
     cursor: pointer;
     transform: scale(1.1);
-
+    a{
+        text-decoration: none;
+        color: $secondary;
+    }
 }
 
 .catalogo__btn a {
     color: #faf6f6;
     text-decoration: none;
 }
+/* Dekstop */
