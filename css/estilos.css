@@ -40,7 +40,7 @@
   min-width: 250px;
   max-width: 300px;
   height: auto;
-  margin: 3rem 6rem;
+  margin: 3rem 2rem;
   -webkit-box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -60,6 +60,7 @@
 .catalogo__card img {
   width: 300px;
   height: auto;
+  background-position: center center;
 }
 
 .card__contenido {
@@ -110,6 +111,17 @@
 }
 
 /* Dekstop */
+@media screen and (min-width: 992px) {
+  .catalogo__card {
+    margin: 4rem;
+  }
+  .catalogo__card .card__imagenes img {
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+  }
+}
+
 .experiencias {
   background-color: #faf6f6;
   display: -webkit-box;
@@ -353,7 +365,7 @@
   display: block;
   width: 20rem;
   height: 2.5rem;
-  color: #faf6f6;
+  color: #0f0e0e;
   border-radius: 5px;
   background-color: #c4c4c400;
   border: solid 1px #0f0e0e;
@@ -473,7 +485,10 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url(../assets/Header-M.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../assets/Header-M.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../assets/Header-M.jpg);
+  background-position: center, center;
+  background-size: cover;
 }
 
 .nav {
@@ -544,6 +559,11 @@
 }
 
 /* CARRUSEL */
+.img-carousel {
+  background-position: center center;
+  background-size: cover;
+}
+
 /* FOOTER */
 .footer {
   background-color: #0f0e0e;
@@ -560,7 +580,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
   /* redes */
   /* contacto */
   /* textos */
@@ -593,9 +613,9 @@
   display: flex;
   width: 90%;
   margin-top: 1rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .footer .footer__contacto label {
@@ -608,7 +628,7 @@
 }
 
 .footer .footer__contacto .footer__contacto--btn {
-  padding: .2rem .6rem;
+  padding: .1rem .3rem;
   border-radius: .4rem;
 }
 
@@ -651,10 +671,11 @@
 }
 
 /* RESOLUCION DESKTOP */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
   .landing-page {
-    background-image: url(../assets/header-fiat-1.jpg);
-    background-repeat: no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../assets/header-fiat-1.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url(../assets/header-fiat-1.jpg);
+    background-position: center center;
     background-size: cover;
   }
   .navbar {
@@ -690,30 +711,9 @@
   }
   /* carrusel */
   .img-carousel {
-    width: auto;
-    height: 45rem;
+    background-position: center center;
+    background-size: auto;
   }
-  /* .carousel-item {
-        height: 65vh;
-        min-height: 300px;
-        background: no-repeat center center scroll;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .card-columns .card {
-        display: inline-block;
-        width: 100%;
-    }
-
-    .card-img-top {
-        width: 100%;
-        height: 200px !important; //esta es la parte importante para que todas tus card-img tengan la misma medida sin importar el tamaño de la imagen
-        border-top-left-radius: calc(0.25rem - 1px);
-        border-top-right-radius: calc(0.25rem - 1px);
-    } */
   /* FOOTER */
   .footer {
     display: -ms-grid;
@@ -812,6 +812,8 @@
 }
 
 .wwa .wwa__ubicacion {
+  width: 100%;
+  margin: auto;
   padding: 0 1rem;
   height: auto;
   display: -webkit-box;
@@ -832,13 +834,12 @@
   height: 29rem;
   width: 80%;
   margin: auto;
+  background-color: #faf6f6;
 }
 
 .wwa .wwa__ubicacion .wwa__ubicacion--mapa iframe {
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: 0.2rem 0.2rem 1rem 0.5rem rgba(59, 58, 58, 0.1);
-          box-shadow: 0.2rem 0.2rem 1rem 0.5rem rgba(59, 58, 58, 0.1);
 }
 
 /* RESOLUCION DESKTOP */

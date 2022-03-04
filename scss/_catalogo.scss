@@ -25,7 +25,7 @@
     min-width: 250px;
     max-width: 300px;
     height: auto;
-    margin: 3rem 6rem;
+    margin: 3rem 2rem;
     box-shadow: 20px 20px 40px 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
@@ -41,6 +41,8 @@
 .catalogo__card img {
     width: 300px;
     height: auto;
+    background-position: center center;
+
 
 }
 
@@ -85,3 +87,15 @@
     text-decoration: none;
 }
 /* Dekstop */
+@media screen and (min-width: 992px) {
+    .catalogo__card {
+        margin: 4rem;
+        .card__imagenes{
+            img{
+                background-position: center center;
+                background-size: cover;
+                height: auto;
+            }
+        }
+    }
+}
