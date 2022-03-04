@@ -22,7 +22,7 @@
 }
 
 .nav {
-    background: rgba(128, 255, 0, 0);
+    background: rgba(63, 110, 15, 0);
 }
 
 .titulo-principal {
@@ -195,6 +195,7 @@
             cursor: pointer;
             background-color: #eee8e8;
             transform: translateY(-5%);
+            transform: scale(1.1);
             a{
                 text-decoration: none;
                 color: $primary;
@@ -206,9 +207,32 @@
     }
     /* carrusel */
     .img-carousel{
-        height: 45rem;
         width: auto;
+        height: 45rem;
+
     }
+    /* .carousel-item {
+        height: 65vh;
+        min-height: 300px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .card-columns .card {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 200px !important; //esta es la parte importante para que todas tus card-img tengan la misma medida sin importar el tamaño de la imagen
+        border-top-left-radius: calc(0.25rem - 1px);
+        border-top-right-radius: calc(0.25rem - 1px);
+    } */
+
     /* FOOTER */
     .footer{
         display: grid;
